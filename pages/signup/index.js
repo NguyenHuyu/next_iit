@@ -20,16 +20,6 @@ const Signup = (props) => {
     const payload = { name, email, password };
     const result = await signup(payload);
     //console.log({ result });
-    if (result.hasError) {
-      setErrorMessage(result.errorMessage);
-    } else {
-      setErrorMessage(null);
-      setName("");
-      setEmail("");
-      setPassword("");
-      console.log(result);
-      router.replace(`/login`);
-    }
   };
 
   if (user && user.authenticating) {

@@ -1,4 +1,4 @@
-import Post from "../../..//models/Post";
+import Post from "../../../models/Post";
 import { errorHandler, responseHandler } from "../../../utils/common";
 
 export default async function handler(req, res) {

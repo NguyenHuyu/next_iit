@@ -35,7 +35,7 @@ const PostCreatePage = () => {
     form.append("image", imageInput);
 
     const result = await createPost(form);
-    if (result.hasError) {
+    if (result) {
       setErrorMessage(result.errorMessage);
     } else {
       setTitle("");
@@ -56,7 +56,7 @@ const PostCreatePage = () => {
   }
 
   return (
-    <div className={`container ${style["post-create"]}`}>
+    <div className={``}>
       <div className="row">
         <div className="col">
           <h2>Create News</h2>

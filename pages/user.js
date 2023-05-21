@@ -1,4 +1,7 @@
-const User = (props) => {
+import axios from "axios";
+
+const User = ({ data }) => {
+  console.log(data);
   return (
     <div>
       <h1>User</h1>

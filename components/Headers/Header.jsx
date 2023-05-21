@@ -9,16 +9,16 @@ export default function Header() {
   return (
     <main>
       <div className="bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-700  w-full ">
-        <div className="headerContainer mx-auto  flex justify-between items-center  xl:max-w-7xl p-1">
+        <div className="headerContainer mx-auto  flex justify-between items-center  max-w-4xl p-1">
           <div className="flex items-center gap-2">
             <Link href="/" legacyBehavior>
               <a>
-                <Image image="logosiu.png" className="w-32" />
+                <Image image="logosiu.png" className="w-20" />
               </a>
             </Link>
             <Link href="/" legacyBehavior>
               <a>
-                <Image image="logoiit.png" className="w-48" />
+                <Image image="logoiit.png" className="w-24" />
               </a>
             </Link>
           </div>

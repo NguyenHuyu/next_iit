@@ -27,9 +27,8 @@ export default async function handler(req, res) {
 
       const saveUser = await user.save();
       if (saveUser) {
-        const userDoc = saveUser._doc;
-        delete userDoc.password;
-        responseHandler(userDoc, res, 201);
+        const { password, ...responseUser } = saveUser._doc;
+        responseHandler(responseUser, res, 201);
       } else {
         errorHandler("Something went wrong", res);
       }

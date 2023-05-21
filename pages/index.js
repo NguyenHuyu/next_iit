@@ -1,47 +1,24 @@
 import Link from "next/link";
 import { getAllPosts } from "../client/request";
+import Banner from "../components/Banner";
 
-export const getStaticProps = async (ctx) => {
-  const res = await getAllPosts();
-  if (!res.hasError) {
-    return {
-      props: {
-        posts: res.body,
-      },
-      revalidate: 5,
-    };
-  } else {
-    return {
-      props: {
-        posts: [],
-        res,
-      },
-    };
-  }
-};
-
+export async function getServerSideProps() {
+  // Call an external API endpoint to get posts
+  const res = await fetch("http://localhost:5000/navbar");
+  const posts = await res.json();
+  return {
+    props: {
+      posts,
+    },
+  };
+}
 export default function Home({ posts }) {
+  console.log(posts);
   return (
     <div>
-      {posts &&
-        posts.map((post, index) => (
-          <div key={index}>
-            <div className="">
-              <article className="">
-                <h2 className="">{post.title}</h2>
-                <p className="">
-                  {post.createdAt} by <a href="#">{post?.user?.name}</a>
-                </p>
-                <Link
-                  legacyBehavior
-                  href={`/post/${post._id}/${post.slug.toLocaleLowerCase()}`}
-                >
-                  <a>View More</a>
-                </Link>
-              </article>
-            </div>
-          </div>
-        ))}
+      {posts.map((i) => (
+        <> {i.pointer}</>
+      ))}
     </div>
   );
 }

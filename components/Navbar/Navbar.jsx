@@ -5,13 +5,13 @@ const NavigationMenuDemo = () => {
   return (
     <div className="bg-[#475569]">
       <div className="flex justify-center items-center text-white">
-        <div className="text-[6px] md:text-[16px] font-medium outline-none focus:outline-none cursor-pointer md:min-w-32 flex items-center bg-transparent px-1 md:px-3 py-1">
+        <div className="text-[6px] md:text-[12px] lg:text-[15px] font-medium outline-none focus:outline-none cursor-pointer md:min-w-32 flex items-center bg-transparent px-1 md:px-3 py-1">
           Trang chủ
         </div>
 
         <div className="group inline-block smm:hidden sm:block md:block lg:block">
           <button className="outline-none focus:outline-none md:min-w-32 flex items-center font-medium  bg-transparent px-3 py-1">
-            <span className="flex-1 pr-1 cursor-default text-[6px] md:text-[16px]">
+            <span className="flex-1 pr-1 cursor-default text-[6px] md:text-[12px] lg:text-[15px]">
               Giới thiệu
             </span>
             <span>
@@ -26,8 +26,8 @@ const NavigationMenuDemo = () => {
             </span>
           </button>
           <ul
-            className="min-w-32 absolute ml-2 origin-top scale-0 transform rounded-sm 
-                    bg-slate-500 transition duration-150 ease-in-out group-hover:scale-100"
+            className="min-w-32 absolute  origin-top scale-0 transform rounded-sm 
+                    bg-slate-500 transition z-50 duration-150 ease-in-out group-hover:scale-100"
           >
             <li className="rounded-sm px-3 py-1 cursor-pointer hover:bg-slate-600">
               Giới thiệu về IIT
@@ -43,7 +43,7 @@ const NavigationMenuDemo = () => {
 
         <div className="group inline-block smm:hidden sm:block md:block lg:block">
           <button className="outline-none focus:outline-none md:min-w-32 flex items-center font-medium  bg-transparent px-3 py-1">
-            <span className="flex-1 pr-1 cursor-default text-[6px] md:text-[16px]">
+            <span className="flex-1 pr-1 cursor-default text-[6px] md:text-[12px] lg:text-[15px]">
               Đào tạo
             </span>
             <span>
@@ -58,7 +58,7 @@ const NavigationMenuDemo = () => {
             </span>
           </button>
           <ul
-            className="min-w-32 absolute ml-2 origin-top scale-0 transform rounded-sm 
+            className="min-w-32 absolute origin-top z-50 scale-0 transform rounded-sm 
                     bg-slate-500 transition duration-150 ease-in-out group-hover:scale-100"
           >
             <li className="rounded-sm px-3 py-1 cursor-pointer hover:bg-slate-600">
@@ -72,7 +72,7 @@ const NavigationMenuDemo = () => {
 
         <div className="group inline-block">
           <button className="outline-none focus:outline-none  px-3 py-1 bg-transparent rounded-sm flex items-center md:min-w-32">
-            <span className="pr-1 font-semibold cursor-default flex-1 text-[6px] md:text-[16px]">
+            <span className="pr-1 font-semibold cursor-default flex-1 text-[6px] md:text-[12px] lg:text-[15px]">
               Khoa học & Công nghệ
             </span>
             <span>
@@ -86,7 +86,7 @@ const NavigationMenuDemo = () => {
             </span>
           </button>
 
-          <ul className="bg-slate-500  rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-52">
+          <ul className="bg-slate-500 z-50  rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-52">
             <li className="rounded-sm px-3 cursor-pointer py-1 hover:bg-slate-600">
               Seminar - workshops
             </li>
@@ -106,7 +106,7 @@ const NavigationMenuDemo = () => {
                   </svg>
                 </span>
               </button>
-              <ul className="bg-slate-500  rounded-sm absolute top-0 right-[0.14rem]  transition duration-150 ease-in-out origin-top-left md:min-w-32 ">
+              <ul className="bg-slate-500 z-50 rounded-sm absolute top-0 right-[0.14rem]  transition duration-150 ease-in-out origin-top-left md:min-w-32 ">
                 <li className="px-3 py-1 cursor-pointer hover:bg-slate-600">
                   Sản phẩm KHCN - CGCN
                 </li>
@@ -124,7 +124,7 @@ const NavigationMenuDemo = () => {
 
         <div className="group inline-block smm:hidden sm:block md:block lg:block">
           <button className="outline-none focus:outline-none md:min-w-32 flex items-center font-medium  bg-transparent px-3 py-1">
-            <span className="flex-1 pr-1 cursor-default text-[6px] md:text-[16px]">
+            <span className="flex-1 pr-1 cursor-default text-[6px] md:text-[12px] lg:text-[15px]">
               Hợp tác
             </span>
             <span>
@@ -139,7 +139,7 @@ const NavigationMenuDemo = () => {
             </span>
           </button>
           <ul
-            className="min-w-32 absolute ml-2 origin-top scale-0 transform rounded-sm 
+            className="md:min-w-32 z-50 absolute origin-top scale-0 transform rounded-sm 
                     bg-slate-500 transition duration-150 ease-in-out group-hover:scale-100"
           >
             <li className="rounded-sm px-3 py-1 cursor-pointer hover:bg-slate-600">
@@ -151,7 +151,7 @@ const NavigationMenuDemo = () => {
           </ul>
         </div>
 
-        <div className="text-[6px] md:text-[16px] font-medium outline-none focus:outline-none md:min-w-32 flex items-center cursor-pointer  bg-transparent px-3 py-1">
+        <div className="text-[6px] md:text-[12px] lg:text-[15px] font-medium outline-none focus:outline-none md:min-w-32 flex items-center cursor-pointer  bg-transparent px-3 py-1">
           Liên hệ
         </div>
       </div>
